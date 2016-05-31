@@ -1,5 +1,6 @@
 CREATE TABLE airdate (
-    id int NOT NULL,
+    id int NOT NULL GENERATED ALWAYS AS IDENTITY
+        (START WITH 1, INCREMENT BY 1),
     date varchar(30) NOT NULL,
     event_id int NOT NULL,
     auditorium varchar(30) NOT NULL,
@@ -8,7 +9,8 @@ CREATE TABLE airdate (
 
 -- Table: event
 CREATE TABLE event (
-    id int NOT NULL,
+    id int NOT NULL GENERATED ALWAYS AS IDENTITY
+        (START WITH 1, INCREMENT BY 1),
     name varchar(30) NOT NULL,
     base_price numeric NOT NULL,
     rating varchar(30) NOT NULL,
@@ -17,7 +19,8 @@ CREATE TABLE event (
 
 -- Table: ticket
 CREATE TABLE ticket (
-    id int NOT NULL,
+    id int NOT NULL GENERATED ALWAYS AS IDENTITY
+        (START WITH 1, INCREMENT BY 1),
     date int NOT NULL,
     seat int NOT NULL,
     price numeric NOT NULL,
@@ -29,7 +32,8 @@ CREATE TABLE ticket (
 
 -- Table: user
 CREATE TABLE user1 (
-    id int NOT NULL,
+    id int NOT NULL GENERATED ALWAYS AS IDENTITY
+        (START WITH 1, INCREMENT BY 1),
     first_name varchar(30) NOT NULL,
     second_name varchar(30) NOT NULL,
     email varchar(30) NOT NULL,

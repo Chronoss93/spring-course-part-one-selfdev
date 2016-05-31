@@ -101,7 +101,7 @@ public class BusinessLogicIntegrationTest {
         String userEmail = "Vladimir_Lenskiy@poet.com";
         User unregisteredUser = generateUser(birthday, userEmail);
         //when
-        userDAO.save(unregisteredUser);
+        User user = userDAO.save(unregisteredUser);
         //then
         User registeredUser = userDAO.find(userEmail);
         assertNotNull(registeredUser);
