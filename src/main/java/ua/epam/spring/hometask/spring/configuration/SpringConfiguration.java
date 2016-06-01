@@ -22,7 +22,8 @@ import java.util.stream.Collectors;
  */
 @Configuration
 @ComponentScan("ua.epam.spring.hometask.*")
-@PropertySource("classpath:auditoriums.properties")
+@PropertySource({"classpath:auditoriums.properties",
+        "classpath:dbmetadata.properties"})
 @EnableAspectJAutoProxy
 public class SpringConfiguration {
 
@@ -36,6 +37,7 @@ public class SpringConfiguration {
     public JdbcTemplate getJdbcTemplate() {
         return new JdbcTemplate(dataSource);
     }
+
     @Bean
     @EventArea
     public Auditorium getRedRoom() {

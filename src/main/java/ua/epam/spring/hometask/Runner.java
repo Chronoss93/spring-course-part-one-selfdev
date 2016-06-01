@@ -17,17 +17,6 @@ public class Runner {
     }
 }
 /**
- * !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
- * !!! Enable LOMBOK PLUGIN From jetbrains repository !!!
- * !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
- * <p>
- * TODO:
- * 90
- * -1 task said use Map to store entities, you used Set todo
- * but why don't have some absrtact class for common methods (you have only interface) todo
- * -1 some little issues like 'not used parameters' (ticket dao) todo purchase command
- * <p>
- * sum
- * 90-5-2-1+1-1+1-1-1+2+2-1-1-1-1=81
+ *
  */
 
